@@ -1,0 +1,54 @@
+{
+  "appTitle": "2FA Authentication Manager",
+  "appDescription": "Windows 2FA Authentication Management Application",
+  "addAuth": "Add 2FA Authentication",
+  "noAuthYet": "No 2FA authentications yet",
+  "addFirstAuth": "Use the button below to add your first 2FA authentication",
+  "add": "Add",
+  "delete": "Delete",
+  "cancel": "Cancel",
+  "deleteConfirmTitle": "Confirm Deletion",
+  "deleteConfirmContent": "Are you sure you want to delete this 2FA authentication?",
+  "serviceName": "Service Name",
+  "serviceNameHint": "e.g.: Google, GitHub, Microsoft",
+  "serviceNameHelper": "Either service name or account name must be entered",
+  "accountName": "Account Name (Optional)",
+  "accountNameHint": "e.g.: john@example.com",
+  "secretKey": "Secret Key *",
+  "secretKeyHint": "Enter 32-digit Base32 secret key",
+  "serviceOrAccountRequired": "Either service name or account name is required",
+  "secretKeyRequired": "Please enter the secret key",
+  "secretKeyMinLength": "Secret key must be at least 16 characters long",
+  "codeCopied": "Code copied to clipboard",
+  "dataLoadFailed": "Failed to load data: {error}",
+  "@dataLoadFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "updateIn": "Updates in {seconds} seconds",
+  "@updateIn": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "unnamedAccount": "Unnamed Account",
+  "settings": "Settings",
+  "language": "Language",
+  "languageChineseDesc": "Simplified Chinese",
+  "languageJapaneseDesc": "Japanese",
+  "languageEnglishDesc": "English",
+  "about": "About",
+  "version": "Version {versionNumber}",
+  "@version": {
+    "placeholders": {
+      "versionNumber": {
+        "type": "String"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(build_release.bat)",
+      "Bash(flutter:*)",
+      "Bash(rmdir:*)",
+      "Bash(rm:*)",
+      "Bash(ls:*)",
+      "Bash(powershell:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)"
+    ],
+    "deny": []
+  }
+}
