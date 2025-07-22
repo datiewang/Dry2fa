@@ -110,11 +110,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.0.0"
+<<<<<<< HEAD
   flutter_localizations:
     dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
+=======
+>>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -125,6 +128,7 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+<<<<<<< HEAD
   intl:
     dependency: "direct main"
     description:
@@ -133,6 +137,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.19.0"
+=======
+>>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
   leak_tracker:
     dependency: transitive
     description:
@@ -197,6 +203,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.16.0"
+<<<<<<< HEAD
   nested:
     dependency: transitive
     description:
@@ -205,6 +212,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.0"
+=======
+>>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
   otp:
     dependency: "direct main"
     description:
@@ -261,6 +270,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.8"
+<<<<<<< HEAD
   provider:
     dependency: "direct main"
     description:
@@ -269,6 +279,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.1.5"
+=======
+>>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
   shared_preferences:
     dependency: "direct main"
     description:

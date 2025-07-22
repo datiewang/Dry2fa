@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+=======
+>>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
 import '../models/totp_item.dart';
 import '../services/storage_service.dart';
 import '../widgets/totp_card.dart';
 import 'add_totp_page.dart';
+<<<<<<< HEAD
 import 'settings_page.dart';
+=======
+>>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -34,7 +40,11 @@ class _HomePageState extends State<HomePage> {
     } catch (e) {
       setState(() => _isLoading = false);
       ScaffoldMessenger.of(context).showSnackBar(
+<<<<<<< HEAD
         SnackBar(content: Text(AppLocalizations.of(context)!.dataLoadFailed(e.toString()))),
+=======
+        SnackBar(content: Text('データの読み込みに失敗しました: $e')),
+>>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
       );
     }
   }
@@ -54,6 +64,7 @@ class _HomePageState extends State<HomePage> {
     final confirm = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
+<<<<<<< HEAD
         title: Text(AppLocalizations.of(context)!.deleteConfirmTitle),
         content: Text(AppLocalizations.of(context)!.deleteConfirmContent),
         actions: [
@@ -64,6 +75,18 @@ class _HomePageState extends State<HomePage> {
           TextButton(
             onPressed: () => Navigator.pop(context, true),
             child: Text(AppLocalizations.of(context)!.delete),
+=======
+        title: Text('削除の確認'),
+        content: Text('この2FA認証を削除してよろしいですか？'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: Text('キャンセル'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: Text('削除'),
+>>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
             style: TextButton.styleFrom(foregroundColor: Colors.red),
           ),
         ],
@@ -82,7 +105,11 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.grey[50],
       appBar: AppBar(
         title: Text(
+<<<<<<< HEAD
           AppLocalizations.of(context)!.appTitle,
+=======
+          '2FA認証マネージャー',
+>>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
           style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 20,
@@ -95,6 +122,7 @@ class _HomePageState extends State<HomePage> {
             icon: Icon(Icons.refresh_rounded, size: 24),
             onPressed: _loadTotpItems,
           ),
+<<<<<<< HEAD
           IconButton(
             icon: Icon(Icons.settings_rounded, size: 24),
             onPressed: () => Navigator.push(
@@ -102,6 +130,8 @@ class _HomePageState extends State<HomePage> {
               MaterialPageRoute(builder: (context) => const SettingsPage()),
             ),
           ),
+=======
+>>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
           SizedBox(width: 8),
         ],
       ),
@@ -129,7 +159,11 @@ class _HomePageState extends State<HomePage> {
                         ),
                         SizedBox(height: 32),
                         Text(
+<<<<<<< HEAD
                           AppLocalizations.of(context)!.noAuthYet,
+=======
+                          'まだ、2FA認証がありません',
+>>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
                           style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.w600,
@@ -138,7 +172,11 @@ class _HomePageState extends State<HomePage> {
                         ),
                         SizedBox(height: 12),
                         Text(
+<<<<<<< HEAD
                           AppLocalizations.of(context)!.addFirstAuth,
+=======
+                          '下のボタンで最初の2FA認証を追加してください',
+>>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
                           style: TextStyle(
                             fontSize: 16,
                             color: Colors.grey[600],
@@ -167,8 +205,13 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: _navigateToAddPage,
         icon: Icon(Icons.add_rounded, size: 24),
+<<<<<<< HEAD
         label: Text(AppLocalizations.of(context)!.add, style: TextStyle(fontWeight: FontWeight.w600)),
         tooltip: AppLocalizations.of(context)!.addAuth,
+=======
+        label: Text('追加', style: TextStyle(fontWeight: FontWeight.w600)),
+        tooltip: '2FA認証を追加',
+>>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
         elevation: 2,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),

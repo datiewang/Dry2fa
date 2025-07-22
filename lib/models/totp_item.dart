@@ -43,7 +43,11 @@ class TotpItem {
     } else if (issuer.isNotEmpty) {
       return issuer;
     } else {
+<<<<<<< HEAD
       return ''; // 返回空字符串，让调用方处理默认值
+=======
+      return '未命名账户';
+>>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
     }
   }
 
