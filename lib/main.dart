@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import 'pages/home_page.dart';
 import 'services/locale_service.dart';
-=======
-import 'pages/home_page.dart';
->>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +14,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
     return ChangeNotifierProvider(
       create: (_) => LocaleService(),
       child: Consumer<LocaleService>(
@@ -77,33 +72,6 @@ class MyApp extends StatelessWidget {
           );
         },
       ),
-=======
-    return MaterialApp(
-      title: '2FA認証マネージャー',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF6366F1),
-          brightness: Brightness.light,
-        ),
-        useMaterial3: true,
-        cardTheme: CardTheme(
-          elevation: 0,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16),
-            side: BorderSide(
-              color: Colors.grey.withValues(alpha: 0.1),
-              width: 1,
-            ),
-          ),
-        ),
-        appBarTheme: const AppBarTheme(
-          elevation: 0,
-          scrolledUnderElevation: 0,
-          centerTitle: true,
-        ),
-      ),
-      home: const HomePage(),
->>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
     );
   }
 }
