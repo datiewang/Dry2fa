@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-=======
->>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
 import 'dart:async';
 import '../models/totp_item.dart';
 import '../services/totp_service.dart';
@@ -73,11 +70,7 @@ class _TotpCardState extends State<TotpCard> {
             ),
             SizedBox(width: 12),
             Text(
-<<<<<<< HEAD
               AppLocalizations.of(context)!.codeCopied,
-=======
-              'コードをコピーしました',
->>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
               style: TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: 14,
@@ -150,13 +143,9 @@ class _TotpCardState extends State<TotpCard> {
                           ),
                         SizedBox(height: widget.item.displaySubtitle.isNotEmpty ? 8 : 0),
                         Text(
-<<<<<<< HEAD
                           widget.item.displayName.isEmpty 
                               ? AppLocalizations.of(context)!.unnamedAccount
                               : widget.item.displayName,
-=======
-                          widget.item.displayName,
->>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w600,
@@ -271,11 +260,7 @@ class _TotpCardState extends State<TotpCard> {
                       ),
                       SizedBox(width: 6),
                       Text(
-<<<<<<< HEAD
                         AppLocalizations.of(context)!.updateIn(_remainingSeconds),
-=======
-                        '${_remainingSeconds}秒後に更新',
->>>>>>> 5d38d1d11d3970eae38942a087a906bdd4787f7d
                         style: TextStyle(
                           fontSize: 13,
                           color: Colors.grey[600],

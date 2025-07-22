@@ -8,7 +8,9 @@
       "Bash(ls:*)",
       "Bash(powershell:*)",
       "Bash(mkdir:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }
