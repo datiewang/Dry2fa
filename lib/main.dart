@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
       child: Consumer<LocaleService>(
         builder: (context, localeService, child) {
           return MaterialApp(
+            title: 'Flutter 2FA Manager',
             onGenerateTitle: (context) => AppLocalizations.of(context)!.appTitle,
             localizationsDelegates: const [
               AppLocalizations.delegate,

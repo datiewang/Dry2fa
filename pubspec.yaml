@@ -1,5 +1,5 @@
 name: flutter_2fa_manager
-description: "Windows向け2FA認証管理アプリケーション"
+description: "Multi-language 2FA Authentication Manager for Windows with English, Chinese and Japanese support"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
