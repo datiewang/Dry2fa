@@ -1,0 +1,21 @@
+Dry2FA is a privacy‑first, offline 2FA (TOTP) code manager for Windows. It stores all data locally on your device and works entirely without internet access, giving you fast, reliable, and secure authentication codes when you need them.
+
+Key features
+- Offline by design: no network required for core features
+- Local‑only storage using Windows platform storage
+- One‑click copy with visual feedback
+- Real‑time countdown and code refresh
+- Clean, modern UI with Material Design 3
+- Easy add/delete of authentication entries
+- Multi‑language interface: English, Chinese, Japanese
+
+Privacy
+- No data collection or telemetry
+- No cloud sync; your data never leaves your device
+- Clipboard use only on your explicit copy action
+
+Compatibility
+- Works with any service supporting standard TOTP (e.g., Google, Microsoft, GitHub, banks, VPNs, gaming platforms)
+
+Who is it for?
+Anyone who prefers an offline, lightweight authenticator app on Windows with a focus on simplicity and privacy.

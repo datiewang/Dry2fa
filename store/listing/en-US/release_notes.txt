@@ -1,0 +1,7 @@
+1.0.1
+- Unified app name to Dry2FA
+- Fixed iPhone-like window size on Windows and locked resizing
+- Always show TOTP codes (tap to copy only)
+- Localization updates (EN/ZH/JA)
+- MSIX packaging for Microsoft Store
+- Minimized permissions (no network capability)

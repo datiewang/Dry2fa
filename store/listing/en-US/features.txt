@@ -1,0 +1,6 @@
+- Offline TOTP codes
+- Local-only storage
+- One-click copy
+- Real-time countdown
+- Modern, minimal UI
+- Multi-language (EN/ZH/JA)

@@ -26,8 +26,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
 
   FlutterWindow window(project);
   Win32Window::Point origin(10, 10);
-  Win32Window::Size size(1280, 720);
-  if (!window.Create(L"Flutter 2FA Manager", origin, size)) {
+  // Simulate iPhone window size (logical points). Common iPhone portrait size.
+  // e.g., iPhone 12/13/14: 390 x 844
+  Win32Window::Size size(390, 844);
+  if (!window.Create(L"Dry2FA", origin, size)) {
     return EXIT_FAILURE;
   }
   window.SetQuitOnClose(true);

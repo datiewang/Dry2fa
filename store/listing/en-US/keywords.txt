@@ -1,0 +1,1 @@
+2FA;TOTP;Authenticator;OTP;Windows;Offline;Security;Privacy;Clipboard;Multi-language

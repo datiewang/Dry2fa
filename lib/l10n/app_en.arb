@@ -1,6 +1,6 @@
 {
-  "appTitle": "2FA Authentication Manager",
-  "appDescription": "Windows 2FA Authentication Management Application",
+  "appTitle": "Dry2FA",
+  "appDescription": "Dry2FA - Windows 2FA Authentication Manager",
   "addAuth": "Add 2FA Authentication",
   "noAuthYet": "No 2FA authentications yet",
   "addFirstAuth": "Use the button below to add your first 2FA authentication",

@@ -1,6 +1,6 @@
 {
-  "appTitle": "2FA認証マネージャー",
-  "appDescription": "Windows向け2FA認証管理アプリケーション",
+  "appTitle": "Dry2FA",
+  "appDescription": "Dry2FA - Windows向け2FA認証マネージャー",
   "addAuth": "2FA認証を追加",
   "noAuthYet": "まだ、2FA認証がありません",
   "addFirstAuth": "下のボタンで最初の2FA認証を追加してください",

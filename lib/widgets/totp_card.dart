@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import '../l10n/app_localizations.dart';
 import 'dart:async';
 import '../models/totp_item.dart';
 import '../services/totp_service.dart';
@@ -22,7 +22,7 @@ class _TotpCardState extends State<TotpCard> {
   String _currentCode = '';
   int _remainingSeconds = 0;
   Timer? _timer;
-  bool _isCodeVisible = false;
+  bool _isCodeVisible = true; // Always show code by default
 
   @override
   void initState() {
@@ -111,7 +111,8 @@ class _TotpCardState extends State<TotpCard> {
     return Card(
       margin: EdgeInsets.zero,
       child: InkWell(
-        onTap: _toggleCodeVisibility,
+        // Tap to copy only; no show/hide toggle
+        onTap: _copyCode,
         borderRadius: BorderRadius.circular(16),
         child: Container(
           padding: EdgeInsets.all(20),

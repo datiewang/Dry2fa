@@ -1,6 +1,6 @@
 {
-  "appTitle": "2FA 身份验证管理器",
-  "appDescription": "Windows 2FA 身份验证管理应用程序",
+  "appTitle": "Dry2FA",
+  "appDescription": "Dry2FA - Windows 2FA 身份验证管理器",
   "addAuth": "添加 2FA 身份验证",
   "noAuthYet": "还没有 2FA 身份验证",
   "addFirstAuth": "使用下面的按钮添加您的第一个 2FA 身份验证",
