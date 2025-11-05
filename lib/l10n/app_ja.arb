@@ -2,7 +2,7 @@
   "appTitle": "Dry2FA",
   "appDescription": "Dry2FA - Windows向け2FA認証マネージャー",
   "addAuth": "2FA認証を追加",
-  "noAuthYet": "まだ、2FA認証がありません",
+  "noAuthYet": "まだ2FA認証がありません",
   "addFirstAuth": "下のボタンで最初の2FA認証を追加してください",
   "add": "追加",
   "delete": "削除",
@@ -12,22 +12,37 @@
   "serviceName": "サービス名",
   "serviceNameHint": "例：Google, GitHub, Microsoft",
   "serviceNameHelper": "サービス名またはアカウント名のどちらか一つは入力してください",
-  "accountName": "アカウント名（オプション）",
+  "accountName": "アカウント名（任意）",
   "accountNameHint": "例：john@example.com",
   "secretKey": "シークレットキー *",
-  "secretKeyHint": "32桁Base32シークレットキーを入力",
+  "secretKeyHint": "32桁のBase32シークレットキーを入力",
   "serviceOrAccountRequired": "サービス名またはアカウント名のどちらか一つは必要です",
   "secretKeyRequired": "シークレットキーを入力してください",
   "secretKeyMinLength": "シークレットキーは最低16桁必要です",
   "codeCopied": "コードをコピーしました",
   "dataLoadFailed": "データの読み込みに失敗しました: {error}",
+  "@dataLoadFailed": {
+    "placeholders": {
+      "error": { "type": "String" }
+    }
+  },
   "updateIn": "{seconds}秒後に更新",
-  "unnamedAccount": "未命名アカウント",
+  "@updateIn": {
+    "placeholders": {
+      "seconds": { "type": "int" }
+    }
+  },
+  "unnamedAccount": "名称未設定",
   "settings": "設定",
   "language": "言語",
   "languageChineseDesc": "簡体字中国語",
   "languageJapaneseDesc": "日本語",
   "languageEnglishDesc": "英語",
   "about": "アプリについて",
-  "version": "バージョン {versionNumber}"
+  "version": "バージョン {versionNumber}",
+  "@version": {
+    "placeholders": {
+      "versionNumber": { "type": "String" }
+    }
+  }
 }

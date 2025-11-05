@@ -18,7 +18,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get addAuth => '2FA認証を追加';
 
   @override
-  String get noAuthYet => 'まだ、2FA認証がありません';
+  String get noAuthYet => 'まだ2FA認証がありません';
 
   @override
   String get addFirstAuth => '下のボタンで最初の2FA認証を追加してください';
@@ -48,7 +48,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get serviceNameHelper => 'サービス名またはアカウント名のどちらか一つは入力してください';
 
   @override
-  String get accountName => 'アカウント名（オプション）';
+  String get accountName => 'アカウント名（任意）';
 
   @override
   String get accountNameHint => '例：john@example.com';
@@ -57,7 +57,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get secretKey => 'シークレットキー *';
 
   @override
-  String get secretKeyHint => '32桁Base32シークレットキーを入力';
+  String get secretKeyHint => '32桁のBase32シークレットキーを入力';
 
   @override
   String get serviceOrAccountRequired => 'サービス名またはアカウント名のどちらか一つは必要です';
@@ -82,7 +82,7 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get unnamedAccount => '未命名アカウント';
+  String get unnamedAccount => '名称未設定';
 
   @override
   String get settings => '設定';

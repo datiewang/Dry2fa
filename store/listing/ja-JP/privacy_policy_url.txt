@@ -1,1 +1,1 @@
-TODO: 公開アクセス可能なプライバシーポリシー URL を記入（例：GitHub の PRIVACY.md）
+﻿https://github.com/datiewang/Dry2FA/blob/main/PRIVACY.md

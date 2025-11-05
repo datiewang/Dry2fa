@@ -26,9 +26,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
 
   FlutterWindow window(project);
   Win32Window::Point origin(10, 10);
-  // Simulate iPhone window size (logical points). Common iPhone portrait size.
-  // e.g., iPhone 12/13/14: 390 x 844
-  Win32Window::Size size(390, 844);
+  // Use a desktop-friendly default size that fits common scaling (e.g. 200%).
+  // 900x600 logical -> 1800x1200 @200%, avoiding off-screen content.
+  Win32Window::Size size(900, 600);
   if (!window.Create(L"Dry2FA", origin, size)) {
     return EXIT_FAILURE;
   }

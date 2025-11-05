@@ -2,7 +2,7 @@ name: flutter_2fa_manager
 description: "Multi-language 2FA Authentication Manager for Windows with English, Chinese and Japanese support"
 publish_to: 'none'
 
-version: 1.0.1+1
+version: 1.0.4+4
 
 environment:
   sdk: ^3.7.2
@@ -25,6 +25,7 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^5.0.0
   msix: ^3.16.7
+  icons_launcher: ^3.0.0
 
 # MSIX packaging configuration for Windows Store
 msix_config:
@@ -32,11 +33,23 @@ msix_config:
   publisher_display_name: datiewang
   identity_name: 13704datiewang.Dry2FA
   publisher: CN=21ADCEF9-BD90-4940-A83C-1F302AA7A962
-  msix_version: 1.0.1.0
-  logo_path: windows/runner/resources/app_icon.ico
-  store: false
+  # Bumped with app version
+  msix_version: 1.0.4.0
+  # Use prepared assets for Store/Tile icons
+  logo_path: Dry2FA_icons/icon_1024.png
+  start_menu_icon_path: Dry2FA_icons/icon_150.png
+  tile_icon_path: Dry2FA_icons/icon_300.png
+  store: true
   bundle: false
+  languages: en-US, zh-CN, ja-JP
 
 flutter:
   uses-material-design: true
   generate: true
+
+# Generate platform launcher icons (Windows .ico) from prepared PNG
+icons_launcher:
+  image_path: Dry2FA_icons/icon_1024.png
+  platforms:
+    windows:
+      enable: true

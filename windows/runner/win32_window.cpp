@@ -134,8 +134,8 @@ bool Win32Window::Create(const std::wstring& title,
   UINT dpi = FlutterDesktopGetDpiForMonitor(monitor);
   double scale_factor = dpi / 96.0;
 
-  // Fixed-size window: remove resize/maximize styles.
-  DWORD style = WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX;
+  // Enable standard resizable window so UI remains accessible at various DPIs.
+  DWORD style = WS_OVERLAPPEDWINDOW;
   HWND window = CreateWindow(
       window_class, title.c_str(), style,
       Scale(origin.x, scale_factor), Scale(origin.y, scale_factor),
@@ -181,6 +181,16 @@ Win32Window::MessageHandler(HWND hwnd,
                             WPARAM const wparam,
                             LPARAM const lparam) noexcept {
   switch (message) {
+    case WM_GETMINMAXINFO: {
+      // Set a reasonable minimum window size (logical 600x400) respecting DPI.
+      auto mmi = reinterpret_cast<MINMAXINFO*>(lparam);
+      HMONITOR monitor = MonitorFromWindow(hwnd, MONITOR_DEFAULTTONEAREST);
+      UINT dpi = FlutterDesktopGetDpiForMonitor(monitor);
+      double scale_factor = dpi / 96.0;
+      mmi->ptMinTrackSize.x = Scale(600, scale_factor);
+      mmi->ptMinTrackSize.y = Scale(400, scale_factor);
+      return 0;
+    }
     case WM_DESTROY:
       window_handle_ = nullptr;
       Destroy();

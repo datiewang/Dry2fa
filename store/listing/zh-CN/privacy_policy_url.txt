@@ -1,1 +1,1 @@
-TODO：替换为公开可访问的隐私政策链接（例如 GitHub 上的 PRIVACY.md）
+﻿https://github.com/datiewang/Dry2FA/blob/main/PRIVACY.md

@@ -69,7 +69,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get secretKeyMinLength => '密钥长度至少需要 16 位';
 
   @override
-  String get codeCopied => '代码已复制到剪贴板';
+  String get codeCopied => '验证码已复制到剪贴板';
 
   @override
   String dataLoadFailed(String error) {
@@ -94,10 +94,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get languageChineseDesc => '简体中文';
 
   @override
-  String get languageJapaneseDesc => '日語';
+  String get languageJapaneseDesc => '日语';
 
   @override
-  String get languageEnglishDesc => '英語';
+  String get languageEnglishDesc => '英语';
 
   @override
   String get about => '关于';

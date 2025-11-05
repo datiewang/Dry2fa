@@ -92,6 +92,11 @@ class _HomePageState extends State<HomePage> {
         foregroundColor: Colors.grey[800],
         actions: [
           IconButton(
+            icon: Icon(Icons.add_rounded, size: 24),
+            tooltip: AppLocalizations.of(context)!.addAuth,
+            onPressed: _navigateToAddPage,
+          ),
+          IconButton(
             icon: Icon(Icons.refresh_rounded, size: 24),
             onPressed: _loadTotpItems,
           ),
@@ -113,6 +118,7 @@ class _HomePageState extends State<HomePage> {
                     padding: EdgeInsets.all(32),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
                       children: [
                         Container(
                           width: 120,
@@ -145,6 +151,21 @@ class _HomePageState extends State<HomePage> {
                             height: 1.5,
                           ),
                           textAlign: TextAlign.center,
+                        ),
+                        SizedBox(height: 20),
+                        SizedBox(
+                          width: 240,
+                          child: ElevatedButton.icon(
+                            onPressed: _navigateToAddPage,
+                            icon: Icon(Icons.add_rounded),
+                            label: Text(
+                              AppLocalizations.of(context)!.add,
+                              style: TextStyle(fontWeight: FontWeight.w600),
+                            ),
+                            style: ElevatedButton.styleFrom(
+                              padding: EdgeInsets.symmetric(vertical: 14),
+                            ),
+                          ),
                         ),
                       ],
                     ),
