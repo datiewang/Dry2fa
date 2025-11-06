@@ -1,4 +1,4 @@
-{
+﻿{
   "appTitle": "Dry2FA",
   "appDescription": "Dry2FA - Windows 2FA Authentication Manager",
   "addAuth": "Add 2FA Authentication",
@@ -19,23 +19,12 @@
   "serviceOrAccountRequired": "Either service name or account name is required",
   "secretKeyRequired": "Please enter the secret key",
   "secretKeyMinLength": "Secret key must be at least 16 characters long",
+  "secretKeyInvalid": "Secret key must be Base32 (A–Z, 2–7)",
   "codeCopied": "Code copied to clipboard",
   "dataLoadFailed": "Failed to load data: {error}",
-  "@dataLoadFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
+  "@dataLoadFailed": {"placeholders": {"error": {"type": "String"}}},
   "updateIn": "Updates in {seconds} seconds",
-  "@updateIn": {
-    "placeholders": {
-      "seconds": {
-        "type": "int"
-      }
-    }
-  },
+  "@updateIn": {"placeholders": {"seconds": {"type": "int"}}},
   "unnamedAccount": "Unnamed Account",
   "settings": "Settings",
   "language": "Language",
@@ -44,11 +33,5 @@
   "languageEnglishDesc": "English",
   "about": "About",
   "version": "Version {versionNumber}",
-  "@version": {
-    "placeholders": {
-      "versionNumber": {
-        "type": "String"
-      }
-    }
-  }
+  "@version": {"placeholders": {"versionNumber": {"type": "String"}}}
 }

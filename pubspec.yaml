@@ -2,7 +2,7 @@ name: flutter_2fa_manager
 description: "Multi-language 2FA Authentication Manager for Windows with English, Chinese and Japanese support"
 publish_to: 'none'
 
-version: 1.0.4+4
+version: 1.0.5+5
 
 environment:
   sdk: ^3.7.2
@@ -34,7 +34,7 @@ msix_config:
   identity_name: 13704datiewang.Dry2FA
   publisher: CN=21ADCEF9-BD90-4940-A83C-1F302AA7A962
   # Bumped with app version
-  msix_version: 1.0.4.0
+  msix_version: 1.0.5.0
   # Use prepared assets for Store/Tile icons
   logo_path: Dry2FA_icons/icon_1024.png
   start_menu_icon_path: Dry2FA_icons/icon_150.png
@@ -53,3 +53,4 @@ icons_launcher:
   platforms:
     windows:
       enable: true
+

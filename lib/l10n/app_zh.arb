@@ -1,4 +1,4 @@
-{
+﻿{
   "appTitle": "Dry2FA",
   "appDescription": "Dry2FA - Windows 2FA 身份验证管理器",
   "addAuth": "添加 2FA 身份验证",
@@ -19,19 +19,12 @@
   "serviceOrAccountRequired": "服务名称或账户名称必须填写一个",
   "secretKeyRequired": "请输入密钥",
   "secretKeyMinLength": "密钥长度至少需要 16 位",
+  "secretKeyInvalid": "密钥必须为 Base32（A–Z, 2–7）",
   "codeCopied": "验证码已复制到剪贴板",
   "dataLoadFailed": "数据加载失败：{error}",
-  "@dataLoadFailed": {
-    "placeholders": {
-      "error": { "type": "String" }
-    }
-  },
+  "@dataLoadFailed": {"placeholders": {"error": {"type": "String"}}},
   "updateIn": "{seconds} 秒后更新",
-  "@updateIn": {
-    "placeholders": {
-      "seconds": { "type": "int" }
-    }
-  },
+  "@updateIn": {"placeholders": {"seconds": {"type": "int"}}},
   "unnamedAccount": "未命名账户",
   "settings": "设置",
   "language": "语言",
@@ -40,9 +33,5 @@
   "languageEnglishDesc": "英语",
   "about": "关于",
   "version": "版本 {versionNumber}",
-  "@version": {
-    "placeholders": {
-      "versionNumber": { "type": "String" }
-    }
-  }
+  "@version": {"placeholders": {"versionNumber": {"type": "String"}}}
 }
