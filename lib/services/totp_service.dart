@@ -4,15 +4,19 @@ import '../models/totp_item.dart';
 
 class TotpService {
   static String generateCode(TotpItem item) {
-    final now = DateTime.now().millisecondsSinceEpoch;
-    return OTP.generateTOTPCodeString(
-      item.secret,
-      now,
-      length: item.digits,
-      interval: item.period,
-      algorithm: Algorithm.SHA1,
-      isGoogle: true,
-    );
+    try {
+      final now = DateTime.now().millisecondsSinceEpoch;
+      return OTP.generateTOTPCodeString(
+        item.secret,
+        now,
+        length: item.digits,
+        interval: item.period,
+        algorithm: Algorithm.SHA1,
+        isGoogle: true,
+      );
+    } catch (_) {
+      return '';
+    }
   }
 
   static int getRemainingSeconds(int period) {

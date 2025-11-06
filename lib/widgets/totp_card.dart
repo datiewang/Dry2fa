@@ -202,7 +202,9 @@ class _TotpCardState extends State<TotpCard> {
                             ),
                           if (_isCodeVisible) SizedBox(width: 8),
                           Text(
-                            _isCodeVisible ? _formatCode(_currentCode) : '●●● ●●●',
+                            _isCodeVisible
+                                ? (_currentCode.isNotEmpty ? _formatCode(_currentCode) : '*** ***')
+                                : '*** ***',
                             style: TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.w700,

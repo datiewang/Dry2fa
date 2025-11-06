@@ -220,6 +220,12 @@ abstract class AppLocalizations {
   /// **'Secret key must be at least 16 characters long'**
   String get secretKeyMinLength;
 
+  /// No description provided for @secretKeyInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Secret key must be Base32 (A–Z, 2–7)'**
+  String get secretKeyInvalid;
+
   /// No description provided for @codeCopied.
   ///
   /// In en, this message translates to:

@@ -12,16 +12,16 @@ class AppLocalizationsZh extends AppLocalizations {
   String get appTitle => 'Dry2FA';
 
   @override
-  String get appDescription => 'Dry2FA - Windows 2FA 身份验证管理器';
+  String get appDescription => 'Dry2FA - Windows 2FA 身份验证管理�?;
 
   @override
   String get addAuth => '添加 2FA 身份验证';
 
   @override
-  String get noAuthYet => '还没有 2FA 身份验证';
+  String get noAuthYet => '还没�?2FA 身份验证';
 
   @override
-  String get addFirstAuth => '使用下面的按钮添加您的第一个 2FA 身份验证';
+  String get addFirstAuth => '使用下面的按钮添加您的第一�?2FA 身份验证';
 
   @override
   String get add => '添加';
@@ -45,7 +45,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get serviceNameHint => '例如：Google, GitHub, Microsoft';
 
   @override
-  String get serviceNameHelper => '必须输入服务名称或账户名称中的一个';
+  String get serviceNameHelper => '必须输入服务名称或账户名称中的一�?;
 
   @override
   String get accountName => '账户名称（可选）';
@@ -57,23 +57,26 @@ class AppLocalizationsZh extends AppLocalizations {
   String get secretKey => '密钥 *';
 
   @override
-  String get secretKeyHint => '输入 32 位 Base32 密钥';
+  String get secretKeyHint => '输入 32 �?Base32 密钥';
 
   @override
-  String get serviceOrAccountRequired => '服务名称或账户名称必须填写一个';
+  String get serviceOrAccountRequired => '服务名称或账户名称必须填写一�?;
 
   @override
-  String get secretKeyRequired => '请输入密钥';
+  String get secretKeyRequired => '请输入密�?;
 
   @override
-  String get secretKeyMinLength => '密钥长度至少需要 16 位';
+  String get secretKeyMinLength => '密钥长度至少需�?16 �?;
 
   @override
-  String get codeCopied => '验证码已复制到剪贴板';
+    @override
+  String get secretKeyInvalid => '��Կ����Ϊ Base32��A�CZ, 2�C7��';
+
+String get codeCopied => '验证码已复制到剪贴板';
 
   @override
   String dataLoadFailed(String error) {
-    return '数据加载失败：$error';
+    return '数据加载失败�?error';
   }
 
   @override
@@ -82,7 +85,7 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get unnamedAccount => '未命名账户';
+  String get unnamedAccount => '未命名账�?;
 
   @override
   String get settings => '设置';
@@ -91,7 +94,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get language => '语言';
 
   @override
-  String get languageChineseDesc => '简体中文';
+  String get languageChineseDesc => '简体中�?;
 
   @override
   String get languageJapaneseDesc => '日语';

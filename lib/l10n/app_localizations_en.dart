@@ -74,6 +74,9 @@ class AppLocalizationsEn extends AppLocalizations {
       'Secret key must be at least 16 characters long';
 
   @override
+  String get secretKeyInvalid => 'Secret key must be Base32 (A–Z, 2–7)';
+
+  @override
   String get codeCopied => 'Code copied to clipboard';
 
   @override

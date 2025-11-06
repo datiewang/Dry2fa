@@ -96,16 +96,21 @@ class _AddTotpPageState extends State<AddTotpPage> {
                   border: OutlineInputBorder(),
                 ),
                 validator: (value) {
-                  if (value == null || value.trim().isEmpty) {
-                    return AppLocalizations.of(context)!.secretKeyRequired;
-                  }
-                  final cleanSecret = value.trim().replaceAll(' ', '');
-                  if (cleanSecret.length < 16) {
-                    return AppLocalizations.of(context)!.secretKeyMinLength;
-                  }
-                  return null;
-                },
-              ),
+              if (value == null || value.trim().isEmpty) {
+                return AppLocalizations.of(context)!.secretKeyRequired;
+              }
+              final cleanSecret = value.trim().replaceAll(' ', '').toUpperCase();
+              // Minimum length and Base32 character set validation (A-Z, 2-7, optional padding '=')
+              if (cleanSecret.length < 16) {
+                return AppLocalizations.of(context)!.secretKeyMinLength;
+              }
+              final base32Re = RegExp(r'^[A-Z2-7]+=*$');
+              if (!base32Re.hasMatch(cleanSecret)) {
+                return AppLocalizations.of(context)!.secretKeyInvalid;
+              }
+              return null;
+            },
+          ),
               SizedBox(height: 24),
               SizedBox(
                 width: double.infinity,
